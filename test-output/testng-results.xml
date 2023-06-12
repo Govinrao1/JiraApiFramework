@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[latest Key: MYJ-50]]>
+    </line>
+  </reporter-output>
+  <suite name="Jira_Suite" duration-ms="38023" started-at="2023-06-11T17:28:03 IST" finished-at="2023-06-11T17:28:41 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerClasses.JiraRunner_1@75881071]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="JiraApi_Test" duration-ms="38023" started-at="2023-06-11T17:28:03 IST" finished-at="2023-06-11T17:28:41 IST">
+      <class name="RunnerClasses.JiraRunner_1">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunnerClasses.JiraRunner_1@75881071]" name="setUpClass" is-config="true" duration-ms="5990" started-at="2023-06-11T17:28:03 IST" finished-at="2023-06-11T17:28:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@64b70f41]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerClasses.JiraRunner_1@75881071]" name="runScenario" duration-ms="25952" started-at="2023-06-11T17:28:09 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-11T17:28:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the Create Issue in Jira api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[JIRA Apis Validation]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[latest Key: MYJ-50]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerClasses.JiraRunner_1@75881071]" name="runScenario" duration-ms="1398" started-at="2023-06-11T17:28:35 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-11T17:28:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the Get issue deatails"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[JIRA Apis Validation]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerClasses.JiraRunner_1@75881071]" name="runScenario" duration-ms="1173" started-at="2023-06-11T17:28:37 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-11T17:28:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the update issue deatails"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[JIRA Apis Validation]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerClasses.JiraRunner_1@75881071]" name="runScenario" duration-ms="1364" started-at="2023-06-11T17:28:38 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-11T17:28:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the delete issue in existing issue"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[JIRA Apis Validation]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerClasses.JiraRunner_1@75881071]" name="runScenario" duration-ms="1423" started-at="2023-06-11T17:28:39 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-11T17:28:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the create issue scheme validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[JIRA Apis Validation]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Schema to use cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
+at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+at StepDefTests.CreateIssueSchemaValidation.givenMethod(CreateIssueSchemaValidation.java:23)
+at ✽.User calls the create user scheme validation(file:///C:/Users/HP/eclipse-workspace/Org.JiraApiProject_com/src/test/resources/Features/File.feature:26)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:RunnerClasses.JiraRunner_1@75881071]" name="tearDownClass" is-config="true" duration-ms="406" started-at="2023-06-11T17:28:41 IST" finished-at="2023-06-11T17:28:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- RunnerClasses.JiraRunner_1 -->
+    </test> <!-- JiraApi_Test -->
+  </suite> <!-- Jira_Suite -->
+</testng-results>

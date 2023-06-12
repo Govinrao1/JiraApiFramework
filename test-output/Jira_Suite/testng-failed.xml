@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Jira_Suite]">
+  <test thread-count="5" name="JiraApi_Test(failed)">
+    <classes>
+      <class name="RunnerClasses.JiraRunner_1">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="4"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- RunnerClasses.JiraRunner_1 -->
+    </classes>
+  </test> <!-- JiraApi_Test(failed) -->
+</suite> <!-- Failed suite [Jira_Suite] -->

@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>TestNG:  JiraApi_Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>JiraApi_Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 11 17:28:03 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38023 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='RunnerClasses.JiraRunner_1.runScenario()'><b>runScenario</b><br>Test class: RunnerClasses.JiraRunner_1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the create issue scheme validation", "Optional[JIRA Apis Validation]"</td>
+<td><div><pre>java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at StepDefTests.CreateIssueSchemaValidation.givenMethod(CreateIssueSchemaValidation.java:23)
+	at ?.User calls the create user scheme validation(file:///C:/Users/HP/eclipse-workspace/Org.JiraApiProject_com/src/test/resources/Features/File.feature:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace857732012", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace857732012'><pre>java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at StepDefTests.CreateIssueSchemaValidation.givenMethod(CreateIssueSchemaValidation.java:23)
+	at ?.User calls the create user scheme validation(file:///C:/Users/HP/eclipse-workspace/Org.JiraApiProject_com/src/test/resources/Features/File.feature:26)
+</pre></div></td>
+<td>1</td>
+<td>RunnerClasses.JiraRunner_1@75881071</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='RunnerClasses.JiraRunner_1.runScenario()'><b>runScenario</b><br>Test class: RunnerClasses.JiraRunner_1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Create Issue in Jira api", "Optional[JIRA Apis Validation]"<br/>
+<a href="#Output-1302779492" onClick='toggleBox("Output-1302779492", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1302779492" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1302779492">
+latest Key: MYJ-50<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>RunnerClasses.JiraRunner_1@75881071</td></tr>
+<tr>
+<td title='RunnerClasses.JiraRunner_1.runScenario()'><b>runScenario</b><br>Test class: RunnerClasses.JiraRunner_1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the delete issue in existing issue", "Optional[JIRA Apis Validation]"</td>
+<td></td>
+<td>1</td>
+<td>RunnerClasses.JiraRunner_1@75881071</td></tr>
+<tr>
+<td title='RunnerClasses.JiraRunner_1.runScenario()'><b>runScenario</b><br>Test class: RunnerClasses.JiraRunner_1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the update issue deatails", "Optional[JIRA Apis Validation]"</td>
+<td></td>
+<td>1</td>
+<td>RunnerClasses.JiraRunner_1@75881071</td></tr>
+<tr>
+<td title='RunnerClasses.JiraRunner_1.runScenario()'><b>runScenario</b><br>Test class: RunnerClasses.JiraRunner_1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Get issue deatails", "Optional[JIRA Apis Validation]"</td>
+<td></td>
+<td>1</td>
+<td>RunnerClasses.JiraRunner_1@75881071</td></tr>
+</table><p>
+</body>
+</html>
